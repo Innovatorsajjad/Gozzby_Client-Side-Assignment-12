@@ -11,7 +11,7 @@ const MyOrders = () => {
     const authEmail = user?.email;
 
     useEffect(() => {
-        fetch(`https://damp-sands-17118.herokuapp.com/order/${authEmail}`)
+        fetch(`https://infinite-waters-11277.herokuapp.com/order/${authEmail}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [setOrders]);

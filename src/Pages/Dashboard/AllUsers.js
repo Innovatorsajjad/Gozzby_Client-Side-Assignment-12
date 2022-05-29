@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const AllUsers = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://damp-sands-17118.herokuapp.com/user').then(res => res.json()))
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://infinite-waters-11277.herokuapp.com/user').then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>
     }

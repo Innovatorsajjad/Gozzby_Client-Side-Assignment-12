@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
 
     useEffect(() => {
         if (totalCost) {
-            fetch('https://damp-sands-17118.herokuapp.com/create-payment-intent', {
+            fetch('https://infinite-waters-11277.herokuapp.com/create-payment-intent', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -86,7 +86,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id,
             }
-            fetch(`https://damp-sands-17118.herokuapp.com/getPayment/${order._id}`, {
+            fetch(`https://infinite-waters-11277.herokuapp.com/getPayment/${order._id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

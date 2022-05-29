@@ -14,7 +14,7 @@ const Purchase = () => {
 
     // console.log(user);
     useEffect(() => {
-        const url = `https://damp-sands-17118.herokuapp.com/product/${productId}`
+        const url = `https://infinite-waters-11277.herokuapp.com/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -48,7 +48,7 @@ const Purchase = () => {
         const userEmail = user?.email;
         const order = { productName, userName, email, img, number, orderQuantity, userEmail, totalCost };
 
-        fetch('https://damp-sands-17118.herokuapp.com/order', {
+        fetch('https://infinite-waters-11277.herokuapp.com/order', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

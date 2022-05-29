@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import ProductRow from './ProductRow';
 
 const ManageProduct = () => {
-    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('https://damp-sands-17118.herokuapp.com/product').then(res => res.json()))
+    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('https://infinite-waters-11277.herokuapp.com/product').then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>
     }

@@ -3,14 +3,14 @@ import { loadStripe } from '@stripe/stripe-js';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import CheckoutForm from './CheckoutForm';
-const stripePromise = loadStripe('pk_test_51L4USlEwxm2jzbz6Lj6VHMs99ZV1eR9RW80Y9eeI3sAvm9EvT1RSj174DZT5HCSWnlKwvih2ZlxgQtnM86pA0cqD003qxJoDIs');
+const stripePromise = loadStripe('pk_test_51L4lNBD84mAxg2r0RrxHydbHqgJbGTo0QBbefuBvRzLOBgQkNeL24ZsQXRlW8vBAcU0OQhCA63cK0elfZp0yLwYK009rkLqS3N');
 
 const Payment = () => {
     const { id } = useParams();
     const [order, setOrder] = useState({});
 
     useEffect(() => {
-        fetch(`https://damp-sands-17118.herokuapp.com/payment/${id}`)
+        fetch(`https://infinite-waters-11277.herokuapp.com/payment/${id}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(order)

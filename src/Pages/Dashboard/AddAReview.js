@@ -26,7 +26,7 @@ const AddAReview = () => {
         const ratings = value;
 
         const review = { text, ratings, email: user?.email, name: user?.displayName };
-        fetch('https://damp-sands-17118.herokuapp.com/review', {
+        fetch('https://infinite-waters-11277.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

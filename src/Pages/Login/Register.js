@@ -40,7 +40,7 @@ const Register = () => {
 
         const user = { name: data.name, email: data.email }
         if (data.email) {
-            fetch(`https://damp-sands-17118.herokuapp.com/user/${data.email}`, {
+            fetch(`https://infinite-waters-11277.herokuapp.com/user/${data.email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

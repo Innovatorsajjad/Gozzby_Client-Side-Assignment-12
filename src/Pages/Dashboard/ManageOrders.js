@@ -4,7 +4,7 @@ import Loading from '../../Pages/Shared/Loading'
 
 const ManageOrders = () => {
 
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://damp-sands-17118.herokuapp.com/order').then(res => res.json()));
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://infinite-waters-11277.herokuapp.com/order').then(res => res.json()));
 
     if (isLoading) {
         return <Loading></Loading>

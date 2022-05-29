@@ -14,7 +14,7 @@ const MyOrder = ({ order, index }) => {
                 {
                     label: 'Yes',
                     onClick: () => {
-                        fetch(`https://damp-sands-17118.herokuapp.com/deleteOrder/${orderId}`, {
+                        fetch(`https://infinite-waters-11277.herokuapp.com/deleteOrder/${orderId}`, {
                             method: 'DELETE',
                             headers: {
                                 'content-type': 'application/json'
