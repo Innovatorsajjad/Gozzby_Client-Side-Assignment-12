@@ -4,7 +4,7 @@ const MyPortfolio = () => {
     return (
         <div className='flex items-center justify-center mt-5'>
             <div class="bg-base-200 py-5">
-                <h2 className="text-3xl text-primary text-center font-bold">Md Arif</h2>
+                <h2 className="text-3xl text-primary text-center font-bold">Sajjad</h2>
 
                 <div className='px-10 mt-5'>
                     <p className="text-"><span className='font-bold'>Email:</span> hossainarif4937@gmail.com</p>
